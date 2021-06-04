@@ -1,0 +1,13 @@
+diff --git a/src/main/java/org/springframework/data/mapping/model/ClassGeneratingPropertyAccessorFactory.java b/src/main/java/org/springframework/data/mapping/model/ClassGeneratingPropertyAccessorFactory.java
+index 658142a1a..0cfbf29b1 100644
+--- a/src/main/java/org/springframework/data/mapping/model/ClassGeneratingPropertyAccessorFactory.java
++++ b/src/main/java/org/springframework/data/mapping/model/ClassGeneratingPropertyAccessorFactory.java
+@@ -133,7 +133,7 @@ public class ClassGeneratingPropertyAccessorFactory implements PersistentPropert
+ 	}
+ 
+ 	private static boolean isTypeInjectable(PersistentEntity<?, ?> entity) {
+-		return entity.getType().getClassLoader() != null && !entity.getType().getPackage().getName().startsWith("java");
++		return entity.getType().getClassLoader() != null || !entity.getType().getPackage().getName().startsWith("java");
+ 	}
+ 
+ 	private boolean hasUniquePropertyHashCodes(PersistentEntity<?, ?> entity) {

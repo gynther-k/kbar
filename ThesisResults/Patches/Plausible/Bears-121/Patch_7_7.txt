@@ -1,0 +1,14 @@
+diff --git a/src/org/traccar/BaseProtocolDecoder.java b/src/org/traccar/BaseProtocolDecoder.java
+index 7a393727b..052f6aa01 100644
+--- a/src/org/traccar/BaseProtocolDecoder.java
++++ b/src/org/traccar/BaseProtocolDecoder.java
+@@ -106,8 +106,7 @@ public abstract class BaseProtocolDecoder extends ExtendedObjectDecoder {
+     }
+ 
+     public DeviceSession getDeviceSession(Channel channel, SocketAddress remoteAddress, String... uniqueIds) {
+-        if (channel.getPipeline().get(HttpRequestDecoder.class) != null
+-                || Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
++        if (Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
+             long deviceId = findDeviceId(remoteAddress, uniqueIds);
+             if (deviceId != 0) {
+                 if (Context.getConnectionManager() != null) {
