@@ -17,7 +17,7 @@ Java 1.8 for Defects4j and Bears bugs.
 
 
 
-Example on initialization of bug Bears-133,Bears-15 and Defects4J Lang_33
+I. Example on initialization of bug Bears-133,Bears-15 and Defects4J Lang_33
 --------------
 ```
 git submodule update --init
@@ -30,31 +30,37 @@ unzip D4J/projects/Lang_33.zip -d D4J/projects/
 
 ```
 
-I. Example on bugs repair with GZoltar Fault Localization (this could take a while)
+II. Modify or create the additional classpathfile
+--------------
+```
+Modify the additional classpathfile, for example BearsClasspaths/B125.txt or generate your own:
+
+cd D4J/projects/Bears-125
+
+mvn -V -B -DskipTests=true -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true clean install
+
+mvn dependency:build-classpath -B | egrep -v "(^\[INFO\]|^\[WARNING\])" | tee BearsClasspaths/B125.txt
+
+replace the old B125.txt with the newly generated.
+
+```
+
+
+III. Example on bugs repair with GZoltar Fault Localization (this could take a while)
 --------------
 ```
 
 ./NormalFLTBarRunner.sh D4J/projects/ Bears-133 /target/classes/ /target/test-classes/ /src/ /test/ gzoltar:fail withgit bears none normal no_local_test BearsClasspaths/B133.txt $(pwd)/apache-maven-3.6.3/bin/mvn
 
-./NormalFLTBarRunner.sh D4J/projects/ Bears-5 /target/classes/ /target/test-classes/ /src/main/java/ /src/test/java/ gzoltar:fail withgit bears none bears2 no_local_test BearsClasspaths/B5.txt $(pwd)/apache-maven-3.6.3/bin/mvn
-
 ./NormalFLTBarRunner.sh D4J/projects/ Lang_33 /target/classes/ /target/test-classes/ /src/main/java/ /src/test/java/ gzoltar:fail withgit d4j none normal no_local_test noneclasspath $(pwd)/apache-maven-3.6.3/bin/mvn
 
 ```
 
-II. Examples with bugs and repair with Perfect Fault Localization
+
+
+IIII. Examples with bugs and repair with Perfect Fault Localization
 --------------
 ```
-0. Modify the additional classpathfile, for example BearsClasspaths/B125.txt or generate your own:
-
-cd D4J/projects/Bears-125
-mvn -V -B -DskipTests=true -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true clean install
-
-mvn dependency:build-classpath -B | egrep -v "(^\[INFO\]|^\[WARNING\])" | tee BearsClasspaths/B125.txt
-
-replace old B125.txt with the newly generated.
-
-1. Run Perfect Fault Localization
 
 ./NormalFLTBarRunner.sh D4J/projects/ Bears-133 /target/classes/ /target/test-classes/ /src/ /test/ SuspiciousCodePositions/BearsPFL/B133.txt withgit bears none normal no_local_test BearsClasspaths/B133.txt $(pwd)/apache-maven-3.6.3/bin/mvn
 
@@ -65,7 +71,7 @@ replace old B125.txt with the newly generated.
 ```
 
 
-III. Instructions
+IIII. Instructions
 --------------
 ```
 The following arguments could be set to TBar:
