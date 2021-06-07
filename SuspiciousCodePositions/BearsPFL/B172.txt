@@ -1,0 +1,11 @@
+org.molgenis.data.security.owned.AbstractRowLevelSecurityRepositoryDecorator@76
+org.molgenis.data.security.owned.AbstractRowLevelSecurityRepositoryDecorator@77
+org.molgenis.data.security.owned.AbstractRowLevelSecurityRepositoryDecorator@78
+org.molgenis.data.security.owned.AbstractRowLevelSecurityRepositoryDecorator@79
+org.molgenis.data.security.owned.AbstractRowLevelSecurityRepositoryDecorator@80
+org.molgenis.data.security.owned.AbstractRowLevelSecurityRepositoryDecorator@81
+org.molgenis.data.security.owned.AbstractRowLevelSecurityRepositoryDecorator@82
+org.molgenis.data.security.owned.AbstractRowLevelSecurityRepositoryDecorator@83
+org.molgenis.data.security.owned.AbstractRowLevelSecurityRepositoryDecorator@84
+org.molgenis.data.security.owned.AbstractRowLevelSecurityRepositoryDecorator@85
+org.molgenis.data.security.owned.AbstractRowLevelSecurityRepositoryDecorator@86

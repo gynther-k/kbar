@@ -1,0 +1,1 @@
+dk.alexandra.fresco.framework.util.StrictBitVector@117

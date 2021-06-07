@@ -1,0 +1,3 @@
+io.enmasse.address.model.Status@23
+io.enmasse.address.model.Status@24
+io.enmasse.address.model.Status@25

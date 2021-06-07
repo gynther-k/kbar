@@ -1,0 +1,2 @@
+io.debezium.connector.mysql.MySqlDdlParser@1227
+io.debezium.connector.mysql.MySqlDdlParser@1228

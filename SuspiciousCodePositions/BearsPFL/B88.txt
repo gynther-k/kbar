@@ -1,0 +1,3 @@
+org.springframework.data.repository.config.RepositoryBeanNameGenerator@54
+org.springframework.data.repository.config.RepositoryBeanNameGenerator@55
+org.springframework.data.repository.config.RepositoryBeanNameGenerator@56

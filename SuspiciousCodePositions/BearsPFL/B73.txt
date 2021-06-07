@@ -1,0 +1,7 @@
+spoon.reflect.visitor.chain.CtQueryImpl@341
+spoon.reflect.visitor.chain.CtQueryImpl@342
+spoon.reflect.visitor.chain.CtQueryImpl@343
+spoon.reflect.visitor.chain.CtQueryImpl@344
+spoon.reflect.visitor.chain.CtQueryImpl@345
+spoon.reflect.visitor.chain.CtQueryImpl@346
+spoon.reflect.visitor.chain.CtQueryImpl@347

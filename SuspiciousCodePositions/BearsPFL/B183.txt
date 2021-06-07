@@ -1,0 +1,1 @@
+org.springframework.cloud.gcp.data.spanner.core.SpannerTemplate@181

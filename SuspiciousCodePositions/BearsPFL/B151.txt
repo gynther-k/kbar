@@ -1,0 +1,3 @@
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils@55
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils@56
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils@57
