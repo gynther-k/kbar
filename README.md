@@ -6,7 +6,15 @@ kBar is a modification of TBar, Template-based automated program repair, for sta
 
 Java 1.8 for Defects4j and Bears bugs.
 
+**Previous test results:**
 
+Previous test results with Bears dataset is located in Results folder.
+
+Test scripts for Bears bugs is located in testScript.sh
+
+**Todo:**
+
+Add CI to repo
 
 ------
 
@@ -71,7 +79,7 @@ IIII. Examples with bugs and repair with Perfect Fault Localization
 ```
 
 
-IIII. Instructions
+V. Instructions
 --------------
 ```
 The following arguments could be set to TBar:
@@ -98,4 +106,3 @@ verbosetest - see what happens when excecuting tests, (true or false)
 
 ```
 
-Previous test results with Bears dataset is located in Results folder.
